@@ -174,7 +174,8 @@ html,body{
      align-items: center;
      width:100%;
    }
-   .card-image img{
+   .card-image img
+   {
     width: 100px;
     margin: auto;
     height: 100px;
