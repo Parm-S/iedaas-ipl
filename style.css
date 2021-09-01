@@ -1,0 +1,212 @@
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+}
+
+
+.logo{
+    display: flex;
+    position: relative;
+    border: none;
+    box-shadow: 0 4px 8px 0 hsla(0,0%,7%,.5);
+    background-image: linear-gradient(90deg,#19398a 12%,#1b4c92 50%,#19398a 89%);
+    margin: 1%;
+    flex-direction: row;
+    align-items: center;
+    /* width: 100%; */
+    height: 8rem;
+
+}
+.logo-image{
+    
+  margin: 10px;
+  padding: 10px;
+}
+.logo-image img{
+    width: 8%;
+    margin: 10px;
+    padding: 10px;
+}
+.logo-text{
+     
+
+       display: flex;
+       margin-left: 60px;
+       position: absolute;
+       color: #fff;
+       font-family: sans-serif;
+       font-weight: bold;
+       font-size: 1.5rem;
+       text-decoration: none;
+       text-transform: uppercase;
+       height: 20px;
+       width: 110px;
+       align-items: center;
+}
+ .container{
+  
+  margin: 20px;
+  padding: 20px;
+} 
+.flex-container{
+   
+  display: flex;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 22%;
+
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+   
+    border-radius: 10px;
+  }
+  .card-csk{
+    background: linear-gradient( 136deg,#fdb913,#f85c00);
+  }
+  .card-dc{
+    background: linear-gradient(136deg ,#004c93,#0358a7);
+  }
+  .card-kkr{
+    background: linear-gradient(136deg,#70458f,#3d2057);
+  }
+  .card-mi{
+    background: linear-gradient( 136deg,#005da0,#003a63);
+  }
+  .card-pk{
+    background: linear-gradient(136deg,#aa4545,#740f0b);
+  }
+  .card-rr{
+    background: linear-gradient( 136deg,#2d4d9d,#172e5e);
+  }
+  .card-rcb{
+    background: linear-gradient(136deg,#000,#464646);
+  }
+  .card-srh{
+    background: linear-gradient(136deg,#fb643e,#b81c25);
+  }
+  .card-image img{
+    width: 160px;
+    height: 160px;
+    z-index: 10;
+    /* top: 10%; */
+    margin-top: -5%;
+    /* top: -10%; */
+  }
+  .card-link{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background: transparent;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 1%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .card-details{
+    margin-top: -5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+  }
+  .card-title{
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+
+    text-transform: capitalize;
+  }
+.card-title-long-name{
+  padding: 2px 60px 2px 60px;
+}
+.card-title-short-name{
+  padding: 2px 100px 2px 100px;
+}
+  
+  .card-sub-title{
+    color: white;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: -4.5%;
+  }
+ .teams-card-wins{
+    background: rgba(0, 0, 0, 0.2);
+    color: #e2d612;
+    margin: 5px;
+    padding: 5px;
+    width: 60%;
+    text-align: center;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 1rem;
+ }
+ .teams-card-wins-no-trophy{
+  margin: 13px;    background: linear-gradient( 136deg,#aa4545,#740f0b);
+  padding: 5px;
+  background: transparent!important;
+ }
+ @media only screen and (max-width:768px) {
+  .card{
+    
+    width:44%;
+  }
+ }
+ @media only screen and (max-width:640px) {
+   .card{
+     display: flex;
+     align-items: center;
+     width:100%;
+   }
+   .card-image img{
+    width: 100px;
+    margin: auto;
+    height: 100px;
+   }
+   .card-details{
+     display: flex;
+     flex-direction: column;
+   }
+   .card-sub-title{
+     display: none;
+   }
+   .card-link{
+     display: none;
+   }
+   .card-title{
+    font-size: 1.5rem;
+    
+    margin-top: 26px;
+   }
+   .card-title-long-name{
+    margin-left: -45px;
+   }
+   .card-title-short-name{
+    margin-left: -84px;
+   }
+   .teams-card-wins{
+    width: 79%;
+    margin-top: -9px;
+    margin-left: -34px;
+    padding: 5px;
+   }
+  
+   
+ }
+
