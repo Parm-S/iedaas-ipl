@@ -38,7 +38,7 @@ const teamsNames = [
     document.querySelector('#card-rcb-teamName'),
     document.querySelector('#card-srh-teamName'),
 ];
-const teamsVenue =[
+const teamsVenue = [
     document.querySelector('#card-csk-venue'),
     document.querySelector('#card-dc-venue'),
     document.querySelector('#card-pk-venue'),
@@ -48,7 +48,7 @@ const teamsVenue =[
     document.querySelector('#card-rcb-venue'),
     document.querySelector('#card-srh-venue')
 ]
-const teamsWin =[
+const teamsWin = [
     document.querySelector('#card-csk-winningYear'),
     document.querySelector('#card-dc-winningYear'),
     document.querySelector('#card-pk-winningYear'),
@@ -58,7 +58,73 @@ const teamsWin =[
     document.querySelector('#card-rcb-winningYear'),
     document.querySelector('#card-srh-winningYear')
 ]
-let teamData =[];
+let teamData = [
+
+    // {
+    //     "id": "chennai-super-kings",
+    //     "teamName": "Chennai Super Kings",
+    //     "winningYears": [
+    //         2010,
+    //         2011,
+    //         2018
+    //     ],
+    //     "venue": "M. A. Chidambaram Stadium"
+    // },
+    // {
+    //     "id": "delhi-capitals",
+    //     "teamName": "Delhi Capitals",
+    //     "winningYears": [],
+    //     "venue": "Feroz Shah Kotla Ground"
+    // },
+    // {
+    //     "id": "kings-xi-punjab",
+    //     "teamName": "Kings XI Punjab",
+    //     "winningYears": [],
+    //     "venue": "IS Bindra Stadium"
+    // },
+    // {
+    //     "id": "kolkata-knight-riders",
+    //     "teamName": "Kolkata Knight Riders",
+    //     "winningYears": [
+    //         2012,
+    //         2014
+    //     ],
+    //     "venue": "Eden Gardens"
+    // },
+    // {
+    //     "id": "mumbai-indians",
+    //     "teamName": "Mumbai Indians",
+    //     "winningYears": [
+    //         2013,
+    //         2015,
+    //         2017,
+    //         2019
+    //     ],
+    //     "venue": "Wankhede Stadium"
+    // },
+    // {
+    //     "id": "rajasthan-royals",
+    //     "teamName": "Rajasthan Royals",
+    //     "winningYears": [
+    //         2008
+    //     ],
+    //     "venue": "Sawai Mansingh Stadium"
+    // },
+    // {
+    //     "id": "royal-challengers-bangalore",
+    //     "teamName": "Royal Challengers Bangalore",
+    //     "winningYears": [],
+    //     "venue": "M. Chinnaswamy Stadium"
+    // },
+    // {
+    //     "id": "sunrisers-hyderabad",
+    //     "teamName": "Sunrisers Hyderabad",
+    //     "winningYears": [
+    //         2016
+    //     ],
+    //     "venue": "Rajiv Gandhi Intl. Cricket Stadium"
+    // }
+];
 
 
 
@@ -80,12 +146,16 @@ fetch('https://cors-anywhere.herokuapp.com/https://ipl-t20.herokuapp.com/teams',
         // console.log(resData[0].winningYears)
         teamData = resData;
         console.log(teamData);
-        for(let i=0; i<teamData.length;i++){
+        for (let i = 0; i < teamData.length; i++) {
             console.log(teamsNames[i]);
             console.log(teamData[i]);
             teamsNames[i].innerHTML = teamData[i].teamName;
-            teamsVenue[i].innerHTML =teamData[i].venue;
-            teamsWin[i].innerHTML = teamData[i].winningYears;
+            teamsVenue[i].innerHTML = teamData[i].venue;
+            if (teamData[i].winningYears.length != 0) {
+                teamsWin[i].innerHTML = teamData[i].winningYears;
+            } else {
+                teamsWin[i].parentElement.style.visibility = "hidden";
+            }
         }
         // cskTeamName.innerHTML = resData[0].teamName;
         // cskVenue.innerHTML = resData[0].venue;
@@ -120,4 +190,14 @@ fetch('https://cors-anywhere.herokuapp.com/https://ipl-t20.herokuapp.com/teams',
         console.log(error);
     })
 
- 
+// for (let i = 0; i < teamData.length; i++) {
+//     console.log(teamsNames[i]);
+//     console.log(teamData[i]);
+//     teamsNames[i].innerHTML = teamData[i].teamName;
+//     teamsVenue[i].innerHTML = teamData[i].venue;
+//     if (teamData[i].winningYears.length != 0) {
+//         teamsWin[i].innerHTML = teamData[i].winningYears;
+//     } else {
+//         teamsWin[i].parentElement.style.visibility = "hidden";
+//     }
+// }
