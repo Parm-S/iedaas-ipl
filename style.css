@@ -200,7 +200,7 @@ html,body{
   .teams-card-wins-no-trophy{
     margin: 19px;    
     padding: 5px;
-    background: transparent!important;
+    /* background: transparent!important; */
    }
    .card-csk{
     background: linear-gradient( 136deg,#fdb913,#f85c00);
