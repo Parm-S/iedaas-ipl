@@ -1,0 +1,193 @@
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    box-sizing: border-box;
+}
+
+
+.logo{
+    display: flex;
+    position: relative;
+    border: none;
+    box-shadow: 0 4px 8px 0 hsla(0,0%,7%,.5);
+    background-image: linear-gradient(90deg,#19398a 12%,#1b4c92 50%,#19398a 89%);
+     
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+
+}
+.logo-image{
+    
+  margin: 10px;
+  padding: 10px;
+}
+.logo-image img{
+    width: 8%;
+    margin: 10px;
+    padding: 10px;
+}
+.logo-text{
+     
+
+       display: flex;
+       margin-left: 60px;
+       position: absolute;
+       color: #fff;
+       font-family: sans-serif;
+       font-weight: bold;
+       font-size: 1.5rem;
+       text-decoration: none;
+       text-transform: uppercase;
+       height: 20px;
+       width: 110px;
+       align-items: center;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.team-header{
+  background-position: 100% 0;
+  background-size: auto 100%;
+  position: relative;
+  height:600px;
+  margin-bottom: 30px;
+}
+.team-header.srh{
+    background-image: url(./images/SRH-huddle.jpg); 
+    background-repeat: no-repeat;
+    
+
+}
+.team-header.srh .team-header-overlay{
+    background:#fb653f;
+    
+}
+.team-header .team-header-overlay{
+    bottom: 0;
+    clip-path: polygon(0 0,93% 0,100% 100%,0 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60%;
+  
+    z-index: 5;
+}
+.team-header .team-header-overlay-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.team-header.srh .team-header-overlay-img{
+   background-image : url(./images/SRH.jpg);
+   opacity: 0.2;
+}
+.team-header .team-header-overlay .team-header-overlay-img{
+
+    content: "";
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.team-header.srh::after{
+  
+        background: linear-gradient(#fdb913 60%,#c28a02);
+        bottom: 0;
+        content: "";
+   
+        -webkit-clip-path: polygon(0 0,90.1% 0,100% 100%,0 100%);
+        clip-path: polygon(0 0,90.1% 0,100% 100%,0 100%);
+        left: 0;
+        position: absolute;
+        width: 63%;
+        top: 0;
+}
+.card-container {
+    margin: 10px;
+    padding: 10px;
+    
+}
+.team-player{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 24%;
+    display: flex;
+    margin: 8px;
+    /* border: 2px solid red; */
+    align-items: center;
+    box-shadow: 12px 15px 10px #00000030;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.card-image{
+    background-color: linear-gradient(134deg,#fb643e,#b81c25);
+    display: flex;
+    width: 100%;
+    background: linear-gradient(134deg,#fb643e,#b81c25);
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.card-image img{
+    width: 100%;
+    min-height: 20.5rem;
+    margin: auto 0;
+    z-index: 2;
+}
+.card-player-detail{
+   text-align: center;
+    text-transform: capitalize;
+    font-family: sans-serif;
+
+}
+.player-name{
+    font-size: 2.6rem;
+    line-height: .91;
+    font-weight: 500;
+}
+.card-player-detail .player-name strong {
+    display: block;
+
+}
+.player-stats{
+    list-style: none;
+    border: none;;
+   display: flex;
+   margin-left:-28px;
+}
+.value{
+    font-size: 3.4rem;
+    font-weight: 900;
+    line-height: 1.22;
+    letter-spacing: 1rem;
+}
+.label{
+    
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    padding: 20px;
+    color: #010000b0;
+}
+.card-button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 100%;
+}
