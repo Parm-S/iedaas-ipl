@@ -1,12 +1,18 @@
- 
+
 let Error404 = {
 
     render : async () => {
-        let view =  /*html*/`
-            <section class="section">
-                <h1> 404 Error </h1>
-            </section>
+        let view =  `
+        
+        <div class="loader"></div>
+            <div class="error" >
+                <h1> Something Went wrong </h1>
+                <p>please try again</p>
+            </div>
+
+            
         `
+       
         return view
     }
     , after_render: async () => {
