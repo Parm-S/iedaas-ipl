@@ -5,48 +5,7 @@ html,body{
     width:100%;
     box-sizing: border-box;
 }
-
-
-.logo{
-    display: flex;
-    position: relative;
-    border: none;
-    box-shadow: 0 4px 8px 0 hsla(0,0%,7%,.5);
-    background-image: linear-gradient(90deg,#19398a 12%,#1b4c92 50%,#19398a 89%);
-     
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: 8rem;
-
-}
-.logo-image{
-    
-  margin: 10px;
-  padding: 10px;
-}
-.logo-image img{
-    width: 8%;
-    margin: 10px;
-    padding: 10px;
-}
-.logo-text{
-     
-
-       display: flex;
-       margin-left: 60px;
-       position: absolute;
-       color: #fff;
-       font-family: sans-serif;
-       font-weight: bold;
-       font-size: 1.5rem;
-       text-decoration: none;
-       text-transform: uppercase;
-       height: 20px;
-       width: 110px;
-       align-items: center;
-}
-.container{
+.team-container{
     width: 100%;
     height: 100%;
 }
@@ -57,15 +16,58 @@ html,body{
   height:600px;
   margin-bottom: 30px;
 }
+.team-header.csk{
+    background-image: url(./images/CSK-huddle.jpg); 
+    background-repeat: no-repeat;
+}
+.team-header.csk .team-header-overlay{
+    background:#fdb913;  
+}
+.team-header.dc{
+    background-image: url(./images/DC-huddle.jpg); 
+    background-repeat: no-repeat;
+}
+.team-header.dc .team-header-overlay{
+    background:#004c93;
+}
+.team-header.pk{
+    background-image: url(./images/PBKS-huddle.jpg); 
+    background-repeat: no-repeat;
+}
+.team-header.pk .team-header-overlay{
+    background: #b32524;
+}
+.team-header.kkr{
+    background-image: url(./images/KKR-huddle.jpg); 
+    background-repeat: no-repeat;
+}
+.team-header.mi{
+    background-image: url(./images/MI-huddle.jpg); 
+    background-repeat: no-repeat;
+}
+.team-header.mi .team-header-overlay{
+    background: #005ea0;
+}
+.team-header.rr{
+    background-image: url(./images/RR-huddle.jpg); 
+    background-repeat: no-repeat;
+}
+.team-header.rr .team-header-overlay{
+    background: #004b8c;
+}
+.team-header.rcb{
+    background-image: url(./images/RCB-huddle.jpg); 
+    background-repeat: no-repeat;
+}
+.team-header.rcb .team-header-overlay{
+    background: #000;
+}
 .team-header.srh{
     background-image: url(./images/SRH-huddle.jpg); 
     background-repeat: no-repeat;
-    
-
 }
 .team-header.srh .team-header-overlay{
-    background:#fb653f;
-    
+    background:#fb653f;   
 }
 .team-header .team-header-overlay{
     bottom: 0;
@@ -74,20 +76,45 @@ html,body{
     left: 0;
     top: 0;
     width: 60%;
-  
     z-index: 5;
 }
 .team-header .team-header-overlay-img{
     background-size: cover;
     background-repeat: no-repeat;
-
 }
-.team-header.srh .team-header-overlay-img{
-   background-image : url(./images/SRH.jpg);
+.team-header.csk .team-header-overlay-img{
+   background-image : url(./images/CSK.jpg);
    opacity: 0.2;
 }
+.team-header.dc .team-header-overlay-img{
+    background-image : url(./images/DC.jpg);
+    opacity: 0.2;
+ }
+ .team-header.pk .team-header-overlay-img{
+    background-image : url(./images/PBKS.jpg);
+    opacity: 0.2;
+ }
+ .team-header.kkr .team-header-overlay-img{
+    background-image : url(./images/KKR.jpg);
+    opacity: 0.2;
+ }
+ .team-header.mi .team-header-overlay-img{
+    background-image : url(./images/MI.jpg);
+    opacity: 0.2;
+ }
+ .team-header.rr .team-header-overlay-img{
+    background-image : url(./images/RR.jpg);
+    opacity: 0.2;
+ }
+ .team-header.rcb .team-header-overlay-img{
+    background-image : url(./images/RCB.jpg);
+    opacity: 0.2;
+ }
+ .team-header.srh .team-header-overlay-img{
+    background-image : url(./images/SRH.jpg);
+    opacity: 0.2;
+ }
 .team-header .team-header-overlay .team-header-overlay-img{
-
     content: "";
     display: inline-block;
     bottom: 0;
@@ -96,20 +123,41 @@ html,body{
     right: 0;
     top: 0;
 }
-.team-header.srh::after{
-  
-        background: linear-gradient(#fdb913 60%,#c28a02);
+.team-header::after{
+       
         bottom: 0;
         content: "";
-   
-        -webkit-clip-path: polygon(0 0,90.1% 0,100% 100%,0 100%);
         clip-path: polygon(0 0,90.1% 0,100% 100%,0 100%);
         left: 0;
         position: absolute;
         width: 63%;
         top: 0;
 }
-.card-container {
+.csk::after{
+    background: linear-gradient(#0081e5 60%,#005699);
+}
+.dc::after{
+    background: linear-gradient(#f83430 60%,#d40b07);
+}
+.pk::after{
+    background: linear-gradient(#c7c8ca 60%,#a0a1a5);
+}
+.kkr::after{
+    background: linear-gradient(#efb04c 60%,#db8e14);
+}
+.mi::after{
+    background: linear-gradient(#aa9a7f 60%,#857458);
+}
+.rr::after{
+    background: linear-gradient(#d5ab4b 60%,#ab8328);
+}
+.rcb::after{
+    background: linear-gradient(#ff3245 60%,#e50015);
+}
+.srh::after{
+    background: linear-gradient(#fdb913 60%,#c28a02);
+}
+.team-card-container {
     margin: 10px;
     padding: 10px;
     
@@ -119,7 +167,7 @@ html,body{
     flex-wrap: wrap;
     justify-content: center;
 }
-.card{
+.team-card{
     width: 24%;
     display: flex;
     margin: 8px;
@@ -129,23 +177,44 @@ html,body{
     border-radius: 10px;
     flex-direction: column;
 }
-.card-image{
-    background-color: linear-gradient(134deg,#fb643e,#b81c25);
+.team-card-image{
     display: flex;
     width: 100%;
-    background: linear-gradient(134deg,#fb643e,#b81c25);
     justify-content: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
 }
-.card-image img{
+.team-card-image.image-csk{
+    background: linear-gradient( 134deg,#fdb913,#f85c00);
+}
+.team-card-image.image-dc{
+    background: linear-gradient( 134deg  ,#004c93,#0358a7);
+}
+.team-card-image.image-pk{
+    background: linear-gradient(134deg,#aa4545,#740f0b);
+}
+.team-card-image.image-kkr{
+    background: linear-gradient(134deg,#70458f,#3d2057);
+}
+.team-card-image.image-mi{
+    background: linear-gradient(134deg,#005da0,#003a63);
+}
+.team-card-image.image-rr{
+    background: linear-gradient(134deg,#2d4d9d,#172e5e);
+}
+.team-card-image.image-rcb{
+    background: linear-gradient(134deg,#000,#464646);
+}
+.team-card-image.image-srh{
+    background: linear-gradient(134deg,#fb643e,#b81c25);
+}
+.team-card-image img{
     width: 100%;
     min-height: 20.5rem;
     margin: auto 0;
     z-index: 2;
 }
-.card-player-detail{
+.team-card-player-detail{
    text-align: center;
     text-transform: capitalize;
     font-family: sans-serif;
@@ -156,7 +225,7 @@ html,body{
     line-height: .91;
     font-weight: 500;
 }
-.card-player-detail .player-name strong {
+.team-card-player-detail .player-name strong {
     display: block;
 
 }
@@ -179,7 +248,7 @@ html,body{
     padding: 20px;
     color: #010000b0;
 }
-.card-button{
+.team-card-button{
     background: transparent;
     border: 0;
     outline: 0;
