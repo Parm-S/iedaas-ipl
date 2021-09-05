@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teams</title>
+    <title>IPLT20.com - Indian Premier League</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="team.css" />
+    <script type="module" src="script.js"></script>
 </head>
-
 <body>
     <header>
         <nav>
             <div class="logo">
                 <div class="logo-image">
-                    <img src="./images/logo.png" alt="" />
+                    <img src="./images/logo.png" alt="Indian Premire League" />
                 </div>
 
                 <div class="logo-text">
@@ -26,160 +26,6 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <div class="flex-container">
-            <!-- ******************start card - csk ******************************* -->
-            <div class="card card-csk">
-                <div class="card-image">
-                    <img src="./images/csk.png" alt="John" />
-                </div>
-                <div class="card-details">
-                    <h3 id="card-csk-teamName" class="card-title card-title-long-name"></h3>
-                    <p id="card-csk-venue" class="card-sub-title"></p>
-                    <div class="teams-card-wins"><i class="fas fa-trophy"></i>
-                        <span id="card-csk-winningYear"></span>
-                    </div>
-                </div>
-                <button class="card-link">Team Home</button>
-                <div class="card-arrow">
-                    <button class=""><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-            <!--*************************** end card-csk********************************** -->
-            <!-- ************************** start card - dc ***************************** -->
-            <div class="card card-dc">
-                <div class="card-image">
-                    <img src="./images/dc.png" alt="John" />
-                </div>
-                <div class="card-details">
-                    <h3 id="card-dc-teamName" class="card-title card-title-short-name"></h3>
-                    <p id="card-dc-venue" class="card-sub-title"></p>
-                    <div class="teams-card-wins ">
-                    <i class="fas fa-trophy"></i>
-                         <span id="card-dc-winningYear"></span>
-                    </div>
-                </div>
-                <button class="card-link">Team Home</button>
-                <div class="card-arrow">
-                    <button class=""><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-            <!-- ********************* end card-dc*************************  -->
-            <!--************************ start-card-pk************************ -->
-            <div class="card card-pk">
-                <div class="card-image">
-                    <img src="./images/pk.png" alt="John" />
-                </div>
-                <div class="card-details">
-                    <h3 id="card-pk-teamName" class="card-title card-title-short-name"></h3>
-                    <p id="card-pk-venue" class="card-sub-title"></p>
-                    <div class="teams-card-wins ">
-                        <i class="fas fa-trophy"></i>
-                        <span id="card-pk-winningYear"></span> 
-                    </div>
-                </div>
-                <button class="card-link">Team Home</button>
-                <div class="card-arrow">
-                    <button class=""><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-            <!--********************************* end card-pk ******************************* -->
-            <!-- ********************start card-kkr **************************************-->
-            <div class="card card-kkr">
-                <div class="card-image">
-                    <img src="./images/kkr.png" alt="John" />
-                </div>
-                <div class="card-details">
-                    <h3 id="card-kkr-teamName" class="card-title card-title-long-name"></h3>
-                    <p id="card-kkr-venue" class="card-sub-title"></p>
-                    <div class="teams-card-wins"><i class="fas fa-trophy"></i>
-                        <span id="card-kkr-winningYear"></span>
-                    </div>
-                </div>
-                <button class="card-link">Team Home</button>
-                <div class="card-arrow">
-                    <button class=""><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-            <!-- ***********************end-card-kkr ******************* -->
-            <!-- ***********************start-card-mi************************ -->
-            <div class="card card-mi">
-                <div class="card-image">
-                    <img src="./images/mi.png" alt="John" />
-                </div>
-                <div class="card-details">
-                    <h3 id="card-mi-teamName" class="card-title card-title-short-name"></h3>
-                    <p id="card-mi-venue" class="card-sub-title"></p>
-                    <div class="teams-card-wins"><i class="fas fa-trophy"></i>
-                        <span id="card-mi-winningYear"></span>
-                    </div>
-                </div>
-                <button class="card-link">Team Home</button>
-                <div class="card-arrow">
-                    <button class=""><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-            <!--************************ end-card-mi*************************** -->
-
-
-            <!--******************************** start card-rr************************* -->
-            <div class="card card-rr">
-                <div class="card-image">
-                    <img src="./images/rr.png" alt="John" />
-                </div>
-                <div class="card-details">
-                    <h3 id="card-rr-teamName" class="card-title card-title-short-name"></h3>
-                    <p id="card-rr-venue" class="card-sub-title"></p>
-                    <div class="teams-card-wins"><i class="fas fa-trophy"></i>
-                        <span id="card-rr-winningYear"></span>
-                    </div>
-                </div>
-                <button class="card-link">Team Home</button>
-                <div class="card-arrow">
-                    <button class=""><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-            <!--************************ end card-rr********************************  -->
-            <!--*********************** start card-rcb************************************* -->
-            <div class="card card-rcb">
-                <div class="card-image">
-                    <img src="./images/rcb.png" alt="John" />
-                </div>
-                <div class="card-details">
-                    <h3 id="card-rcb-teamName" class="card-title card-title-long-name"></h3>
-                    <p id="card-rcb-venue" class="card-sub-title"></p>
-                    <div class="teams-card-wins ">
-                        <i class="fas fa-trophy"></i>
-                        <span id="card-rcb-winningYear"></span> 
-                    </div>
-                </div>
-                <button class="card-link">Team Home</button>
-                <div class="card-arrow">
-                    <button class=""><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-            <!--******************* end-card-rcb************************************ -->
-            <!--******************* start-card-srh***************************************** -->
-            <div class="card card-srh">
-                <div class="card-image">
-                    <img src="./images/srh.png" alt="John" />
-                </div>
-                <div class="card-details">
-                    <h3 id="card-srh-teamName" class="card-title card-title-short-name"></h3>
-                    <p id="card-srh-venue" class="card-sub-title"></p>
-                    <div class="teams-card-wins"><i class="fas fa-trophy"></i>
-                        <span id="card-srh-winningYear"></span>
-                    </div>
-                </div>
-                <button class="card-link">Team Home</button>
-                <div class="card-arrow">
-                    <button class=""><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-            <!--****************************** end card-srh*************************** -->
-        </div>
-    </div>
-    <script src="script.js"></script>
+    <div id="page_container"></div>
 </body>
-
 </html>
