@@ -1,20 +1,14 @@
-
-// const setHeaders = {
-//     method: 'GET',
-//     headers: {
-//         'Content-Type': 'application/json',
-//         'Access-Control-Allow-Origin': '*'
-//     },
-//     mode: 'cors',
-//     cache: 'default'
-
-// };
+import Loader from "../../services/Loader.js";
+import Error404 from "./Error.js";
 let getPlayerList = async () => {
     try {
+        Loader.showLoader();
         const response = await fetch('https://ipl-t20.herokuapp.com/teams/delhi-capitals');
+        Loader.hideLoader();
         const json = await response.json();
         return json;
     } catch (err) {
+        document.getElementById('page_container').innerHTML = await Error404.render();
         console.log(err);
     }
 }
@@ -32,7 +26,7 @@ let Dc = {
                     </div>
                 </div>
             </div>
-         
+             
             <div class="team-card-container">
                 <div  class="team-player">
                     ${playersList.players.map(player => 

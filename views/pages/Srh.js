@@ -1,20 +1,15 @@
+import Loader from "../../services/Loader.js";
+import Error404 from "./Error.js";
 
-// const setHeaders = {
-//     method: 'GET',
-//     headers: {
-//         'Content-Type': 'application/json',
-//         'Access-Control-Allow-Origin': '*'
-//     },
-//     mode: 'cors',
-//     cache: 'default'
-
-// };
 let getPlayerList = async () => {
     try {
+        Loader.showLoader();
         const response = await fetch('https://ipl-t20.herokuapp.com/teams/sunrisers-hyderabad');
+        Loader.hideLoader();
         const json = await response.json();
         return json;
     } catch (err) {
+        document.getElementById('page_container').innerHTML =  await Error404.render();
         console.log(err);
     }
 }

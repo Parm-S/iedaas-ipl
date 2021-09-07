@@ -1,22 +1,19 @@
 
-// const setHeaders = {
-//     method: 'GET',
-//     headers: {
-//         'Content-Type': 'application/json',
-//         'Access-Control-Allow-Origin': '*'
-//     },
-//     mode: 'cors',
-//     cache: 'default'
+import Loader from "../../services/Loader.js";
+import Error404 from "./Error.js";
 
 
 // };
 let getPlayerList = async () => {
     try {
+        Loader.showLoader();
         const response = await fetch('https://ipl-t20.herokuapp.com/teams/mumbai-indians');
+        Loader.hideLoader();
         const json = response.json();
         return json;
     }
     catch (error) {
+        document.getElementById('page_container').innerHTML = await Error404.render();
         console.log(error);
     }
 }
