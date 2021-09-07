@@ -44,3 +44,4 @@ const router = async () => {
 window.addEventListener('hashchange', router);
 // Listen on page load:
 window.addEventListener('load', router);
+
